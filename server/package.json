@@ -9,10 +9,10 @@
   "author": "donleonardo101",
   "license": "ISC",
   "dependencies": {
-    "express": "4.16.3",
-    "pg": "8.0.3",
+    "body-parser": "*",
     "cors": "2.8.4",
-    "nodemon": "1.18.3",
-    "body-parser": "*"
+    "express": "4.16.3",
+    "nodemon": "^2.0.13",
+    "pg": "8.0.3"
   }
 }
