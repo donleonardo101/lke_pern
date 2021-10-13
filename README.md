@@ -4,7 +4,7 @@ npx create-react-app client
 
 mkdir ./server && cd server && npm init
 
-npm i
+npm i #npm install
 
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
