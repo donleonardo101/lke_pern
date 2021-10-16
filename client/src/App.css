@@ -1,4 +1,18 @@
-.App {
+.header {
+  margin-bottom: 40px;
+  background: #eee;
+}
+
+.header a {
+  margin-left: 20px;
+}
+
+.main {
+  padding: 10px;
+  background: #ccc;
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +50,4 @@
     transform: rotate(360deg);
   }
 }
+*/
