@@ -1,12 +1,18 @@
 # kubernetes_lke1
 
+https://www.youtube.com/watch?v=-pTel5FojAQ
+
 npx create-react-app client
 
 mkdir ./server && cd server && npm init
 
 npm i #npm install
 
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+
+#######################################################
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 
