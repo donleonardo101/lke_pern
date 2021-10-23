@@ -22,7 +22,8 @@ const MainComponent = () => {
 
             setValue("");
             getAllNumbers();
-        }.[value, getAllNumbers]
+        },
+        [value, getAllNumbers]
     );
 
     useEffect(() => {
