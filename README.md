@@ -14,9 +14,13 @@ docker-compose up --build
 
 cd client
 
-docker run -it -p 3000:3000 chriscanna/lke_pern
+docker run -it -p 3000:3000 chriscanna/pern_client
 
 docker push chriscanna/lke_pern
+
+cd server
+
+docker run -it -p 4002:5000 chriscanna/pern_server
 
 >kubernetes
 
