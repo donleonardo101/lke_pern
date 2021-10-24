@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import OtherPage from './OtherPage';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import OtherPage from "./OtherPage";
 import MainComponent from "./MainComponent";
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
     <Router>
       <Fragment>
       <header className="header">
-        <div>This is a multicontainer application</div>
+        <div>To jest wielokontenerowa aplikacja</div>
         <Link to="/">Home</Link>
-        <Link to="/otherpage">Other page</Link>
+        <Link to="/otherpage">Nastepna strona</Link>
       </header>
       <div className="main">
         <Route exact path="/" component={MainComponent} />

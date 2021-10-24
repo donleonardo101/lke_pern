@@ -1,10 +1,10 @@
 import { useCallback, useState, useEffect } from "react";
 import axios from "axios";
-import './MainComponent.css';
+import "./MainComponent.css";
 
 const MainComponent = () => {
     const [values, setValues] = useState([]);
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState("");
 
     const getAllNumbers = useCallback(async () => {
         // we will use nginx to redirect it to the proper URL
@@ -16,7 +16,7 @@ const MainComponent = () => {
         async event => {
             event.preventDefault();
 
-            await axios.post('/api/values', {
+            await axios.post("/api/values", {
                 value
             });
 
@@ -32,23 +32,23 @@ const MainComponent = () => {
 
     return (
         <div>
-            <button onClick={getAllNumbers}>Get all numbers</button>
+            <button onClick={getAllNumbers}>Wyswietl liczby</button>
             <br />
-            <span className="title">Values</span>
+            <span className="title">Wartosci</span>
             <div className="values">
                 {values.map(value => (
                     <div className="values">{value}</div>
                 ))}
             </div>
             <form className="form" onSubmit={saveNumber}>
-                <label>Enter your value: </label>
+                <label>Wprowadz wartosc: </label>
                 <input
                     value={value}
                     onChange={event => {
                         setValue(event.target.value);
                     }}
                 />
-                <button>Submit</button>
+                <button>Zapisz</button>
             </form>
         </div>
     );

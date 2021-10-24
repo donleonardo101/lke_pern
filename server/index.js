@@ -1,4 +1,4 @@
-const keys = require("./keys.js");
+const keys = require("./keys");
 
 // Express Application setup
 const express = require("express");
@@ -27,7 +27,7 @@ pgClient.on("connect", client => {
 
 ///Express route definitions
 app.get("/", (req, res) => {
-    res.send("Hi");
+    res.send("Hello");
 })
 
 // get the values
@@ -40,9 +40,10 @@ app.get("/values/all", async (req, res) => {
 // now the post -> insert value
 app.post("/values", async (req, res) => {
     if (!req.body.value) res.send({ working: false });
+
     pgClient.query("INSERT INTO values(number) VALUES($1)", [req,body,value]);
 
-    req.send({ working: true }
+    res.send({ working: true });
 });
 
 app.listen(5000, err => {

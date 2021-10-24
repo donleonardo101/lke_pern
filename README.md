@@ -8,7 +8,17 @@ mkdir ./server && cd server && npm init
 
 npm i #npm install
 
+w katalogu głównym:
 
+docker-compose up --build
+
+cd client
+
+docker run -it -p 3000:3000 chriscanna/lke_pern
+
+docker push chriscanna/lke_pern
+
+>kubernetes
 
 
 
