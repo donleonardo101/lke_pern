@@ -24,6 +24,21 @@ docker run -it -p 4002:5000 chriscanna/pern_server
 
 >kubernetes
 
+https://www.youtube.com/watch?v=OVVGwc90guo&t=14s
+
+cd lke_pern
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.46.0/deploy/static/provider/cloud/deploy.yaml
+
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=1234test
+
+kubectl apply -f k8s
+
+kubectl get services 
+
+kubectl get pods
+
+kubectl delete -f k8s
 
 
 #######################################################
